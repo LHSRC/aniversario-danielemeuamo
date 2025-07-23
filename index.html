@@ -135,6 +135,13 @@
         .photo-card:nth-child(5) { animation-delay: 1.0s; }
         .photo-card:nth-child(6) { animation-delay: 1.2s; }
         
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
         .photo-card:nth-child(1) .photo,
         .photo-card:nth-child(3) .photo,
         .photo-card:nth-child(5) .photo,
@@ -143,13 +150,6 @@
         .photo-card:nth-child(5) .photo-placeholder {
             border: none !important;
             box-shadow: none !important;
-        }
-        
-        @keyframes slideUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
         
         .photo {
@@ -587,7 +587,7 @@
         
         <div class="photo-gallery">
             <div class="photo-card">
-                <img src="./imagens/foto1.jpg.png" class="photo" alt="Dani relaxando" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <img src="./imagens/foto1.jpg" class="photo" alt="Dani relaxando" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="photo-placeholder" style="background: linear-gradient(135deg, #ff6b9d 0%, #764ba2 100%); color: white; display: none; align-items: center; justify-content: center; font-size: 1.1rem; text-align: center; padding: 20px;">
                     🏖️ Dani relaxando com óculos escuros<br>na cadeira branca
                 </div>
@@ -595,7 +595,7 @@
             </div>
             
             <div class="photo-card">
-                <img src="./imagens/foto2.jpg.jpg" class="photo" alt="Dani maquiagem" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <img src="./imagens/foto2.jpg" class="photo" alt="Dani maquiagem" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="photo-placeholder" style="background: linear-gradient(135deg, #c44569 0%, #f093fb 100%); color: white; display: none; align-items: center; justify-content: center; font-size: 1.1rem; text-align: center; padding: 20px;">
                     💄 Dani com maquiagem linda<br>mãos no rosto
                 </div>
@@ -603,7 +603,7 @@
             </div>
             
             <div class="photo-card">
-                <img src="./imagens/foto3.jpg.HEIC" class="photo" alt="Dani sorrindo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <img src="./imagens/foto3.jpg" class="photo" alt="Dani sorrindo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="photo-placeholder" style="background: linear-gradient(135deg, #f8b500 0%, #feca57 100%); color: white; display: none; align-items: center; justify-content: center; font-size: 1.1rem; text-align: center; padding: 20px;">
                     😊 Dani com roupa colorida<br>sorriso radiante
                 </div>
@@ -611,7 +611,7 @@
             </div>
             
             <div class="photo-card">
-                <img src="./imagens/foto4.jpg.jpg" class="photo" alt="Casal junto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <img src="./imagens/foto4.jpg" class="photo" alt="Casal junto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="photo-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; display: none; align-items: center; justify-content: center; font-size: 1.1rem; text-align: center; padding: 20px;">
                     💕 Luiz e Dani juntos<br>nosso amor
                 </div>
@@ -619,7 +619,7 @@
             </div>
             
             <div class="photo-card">
-                <img src="./imagens/foto5.jpg.jpg" class="photo" alt="Aniversário 24 anos" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <img src="./imagens/foto5.jpg" class="photo" alt="Aniversário 24 anos" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="photo-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; display: none; align-items: center; justify-content: center; font-size: 1.1rem; text-align: center; padding: 20px;">
                     🎂 Dani comemorando 24 anos<br>com bolo das Princesas
                 </div>
@@ -627,7 +627,7 @@
             </div>
             
             <div class="photo-card">
-                <img src="./imagens/foto6.jpg.jpg" class="photo" alt="Vestido amarelo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <img src="./imagens/foto6.jpg" class="photo" alt="Vestido amarelo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="photo-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white; display: none; align-items: center; justify-content: center; font-size: 1.1rem; text-align: center; padding: 20px;">
                     🌻 Dani linda de vestido amarelo<br>com bolo de aniversário
                 </div>
@@ -890,7 +890,7 @@
                 </p>
                 <div style="margin-top: 30px;">
                     <p style="font-style: italic; color: #a5d6a7; font-size: 1.4rem;">
-                        "Não existe palavras suficientes para expressar o quanto te amo" 💕
+                        "Não existem palavras suficientes para expressar o quanto te amo" 💕
                     </p>
                 </div>
             `);
